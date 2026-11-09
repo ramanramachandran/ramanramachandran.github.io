@@ -37,6 +37,8 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:5
 .links{display:flex;gap:18px;font-size:14px}
 .links a{color:var(--muted)}
 .links a:hover{color:var(--text);text-decoration:none}
+.notice{background:var(--accent-soft);color:var(--text);border-bottom:1px solid var(--line);text-align:center;font-size:14px;padding:8px 16px}
+@media print{.notice{display:none}}
 .brand{white-space:nowrap}
 .links a{white-space:nowrap}
 @media (max-width:860px){.links{display:none}}
@@ -86,6 +88,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);f
 </style>
 </head>
 <body>
+<div class="notice" role="note">🚧 This site is a work in progress. More projects and details are being added.</div>
 <nav>
   <div class="wrap">
     <a class="brand" href="#top">Raman Ramachandran</a>
