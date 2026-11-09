@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raman Ramachandran | Security Analyst</title>
+<meta name="description" content="Raman Ramachandran, CISM, PCNSE. Security Analyst with experience in SOC operations, SIEM, firewalls and incident response. Based in Montreal.">
+<meta property="og:title" content="Raman Ramachandran | Security Analyst">
+<meta property="og:description" content="SOC operations, SIEM, network security and incident response. CISM, PCNSE, NSE4, NSE5. Montreal, Canada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --text:#14171f; --muted:#5a6272; --line:#e3e6ec;
+  --accent:#0f7b6c; --accent-soft:#e3f3f0; --chip:#eef0f4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1117; --surface:#151b23; --text:#e6e9ef; --muted:#9aa4b2; --line:#262e3a;
+    --accent:#3fc1a5; --accent-soft:#12302b; --chip:#1d2430;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1117; --surface:#151b23; --text:#e6e9ef; --muted:#9aa4b2; --line:#262e3a;
+  --accent:#3fc1a5; --accent-soft:#12302b; --chip:#1d2430;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.brand{font-weight:700;color:var(--text);letter-spacing:-.01em}
+.links{display:flex;gap:18px;font-size:14px}
+.links a{color:var(--muted)}
+.links a:hover{color:var(--text);text-decoration:none}
+.brand{white-space:nowrap}
+.links a{white-space:nowrap}
+@media (max-width:860px){.links{display:none}}
+header{padding:72px 0 48px}
+.eyebrow{font:500 13px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-.02em;margin:14px 0 10px}
+.role{font-size:clamp(18px,2.6vw,22px);color:var(--muted);margin:0 0 22px}
+.lead{max-width:640px;font-size:17px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0d1117}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0d1117}}
+.btn:hover{text-decoration:none;filter:brightness(1.05)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.stat b{display:block;font-size:24px;letter-spacing:-.01em}
+.stat span{color:var(--muted);font-size:14px}
+@media (max-width:560px){.stats{grid-template-columns:1fr}}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:22px;letter-spacing:-.01em;margin:0 0 22px}
+h2 small{display:block;font:500 12px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:15px;margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:6px;padding:4px 10px;font-size:14px}
+.job{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font:500 13px/1.5 "JetBrains Mono",monospace;padding-top:3px}
+.job h3{margin:0;font-size:17px}
+.job .org{color:var(--accent);font-weight:600;font-size:15px;margin:2px 0 10px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin:4px 0;color:var(--text)}
+@media (max-width:640px){.job{grid-template-columns:1fr;gap:4px}}
+.cert{display:flex;gap:14px;align-items:flex-start}
+.badge{flex:none;min-width:64px;text-align:center;background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:8px 6px;font:600 13px/1.2 "JetBrains Mono",monospace}
+.cert p{margin:0}
+.cert .sub{color:var(--muted);font-size:14px}
+.project p{margin:0 0 12px}
+.project ul{margin:0 0 14px;padding-left:18px}
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:14px}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit;font-size:13px}
+@media print{nav,.cta,.toggle{display:none}body{background:#fff;color:#000}section{padding:18px 0}header{padding:20px 0}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Raman Ramachandran</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#lab">Home Lab</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+    </div>
+    <button class="toggle" id="theme" type="button" aria-label="Toggle color theme">Theme</button>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header>
+    <div class="eyebrow">Security Analyst &middot; Montreal, Canada</div>
+    <h1>Raman Ramachandran</h1>
+    <p class="role">CISM &middot; PCNSE &middot; Fortinet NSE4 / NSE5</p>
+    <p class="lead">Security professional with hands-on experience across SOC operations, SIEM, firewalls, endpoint protection and incident response, at Sophos, Tata Communications, Stratejm and Celestica.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:ramanramachandran2015@gmail.com">Email me</a>
+      <a class="btn" href="#experience">View experience</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>6+ years</b><span>SOC and security operations</span></div>
+      <div class="stat"><b>4 certifications</b><span>CISM, PCNSE, NSE4, NSE5</span></div>
+      <div class="stat"><b>M.Eng.</b><span>Internetworking</span></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2><small>About</small>Summary</h2>
+    <p>I am a SOC and network security analyst with 6+ years in security operations environments and 5 years of endpoint and network security monitoring. I have investigated alerts and logs in SIEM and MDR platforms, supported incident response from detection through recovery, administered firewalls, EDR and DLP, and onboarded clients onto managed SIEM services.</p>
+    <p>I am looking for a Security Analyst, SOC Analyst or Network Security Engineer role where I can apply detection, investigation and firewall expertise.</p>
+  </section>
+
+  <section id="skills">
+    <h2><small>Toolkit</small>Skills</h2>
+    <div class="grid2">
+      <div class="card"><h3>SIEM &amp; Log Analysis</h3><ul class="chips"><li>IBM QRadar</li><li>Fortinet FortiSIEM</li><li>FortiAnalyzer</li><li>Wazuh</li></ul></div>
+      <div class="card"><h3>Firewalls &amp; Network Security</h3><ul class="chips"><li>Palo Alto</li><li>FortiGate</li><li>Cisco Meraki</li><li>IDS / IPS</li><li>WAF</li><li>VPN</li></ul></div>
+      <div class="card"><h3>Endpoint, EDR &amp; DLP</h3><ul class="chips"><li>CrowdStrike</li><li>Carbon Black</li><li>McAfee ePO</li><li>McAfee DLP</li><li>Sophos MDR</li><li>IBM BigFix</li></ul></div>
+      <div class="card"><h3>Monitoring &amp; Ticketing</h3><ul class="chips"><li>Wireshark</li><li>Cyglass</li><li>SolarWinds</li><li>ServiceNow</li><li>Remedy</li><li>Siebel</li></ul></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2><small>Career</small>Work Experience</h2>
+
+    <div class="job">
+      <div class="when">Oct 2023 &ndash; Jun 2026</div>
+      <div>
+        <h3>Technical Support Analyst</h3>
+        <div class="org">Sophos</div>
+        <ul>
+          <li>Resolved client issues across Sophos MDR offerings, including network products, endpoints, portal integrations and APIs, by identifying root causes from symptoms and data.</li>
+          <li>Configured and managed firewalls, IDS/IPS, WAF, DLP, IAM and endpoint protection.</li>
+          <li>Supported incident response: threat detection, containment, eradication and recovery.</li>
+          <li>Investigated logs and security events using Sophos tooling, and documented troubleshooting in ServiceNow.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Apr 2022 &ndash; Oct 2023</div>
+      <div>
+        <h3>Network Security Engineer</h3>
+        <div class="org">Tata Communications</div>
+        <ul>
+          <li>Provided L3 support for enterprise network infrastructure and NOC operations.</li>
+          <li>Analyzed packet-level traffic with mirroring and packet capture to diagnose latency, packet loss, TCP failures and application issues.</li>
+          <li>Assisted with security audits, compliance assessments and regulatory requirements.</li>
+          <li>Took part in migrations of Cisco Catalyst 6k / Nexus 9k switches and Cisco WLC 5k / 9k, and supported FortiGate HA implementation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Mar 2021 &ndash; Apr 2022</div>
+      <div>
+        <h3>Security Administrator</h3>
+        <div class="org">Stratejm</div>
+        <ul>
+          <li>Onboarded new clients onto FortiSIEM.</li>
+          <li>Designed, implemented and maintained security controls across network, cloud, server and endpoint.</li>
+          <li>Built VPN connections for new clients using Cisco Meraki and AWS.</li>
+          <li>Deployed and administered virtual machines: disk expansion, CPU and memory sizing, VM configuration.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Mar 2018 &ndash; Dec 2021</div>
+      <div>
+        <h3>SOC Analyst</h3>
+        <div class="org">Celestica</div>
+        <ul>
+          <li>Performed vulnerability assessments, risk analysis and remediation tracking.</li>
+          <li>Administered security systems including firewall management, EDR, DLP and endpoint security.</li>
+          <li>Kept hardware and software patched with IBM BigFix.</li>
+          <li>Conducted security assessments and recommended improvements to security posture.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="when">Apr 2017 &ndash; Dec 2017</div>
+      <div>
+        <h3>IT Administrator</h3>
+        <div class="org">Repsol Canaport LNG</div>
+        <ul>
+          <li>Monitored security events and investigated incidents in IBM QRadar.</li>
+          <li>Supported and troubleshot enterprise applications and endpoint technologies.</li>
+          <li>Upgraded IOS on Cisco Catalyst 2960-X switches and firmware on FortiGate firewalls.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="lab" class="project">
+    <h2><small>Project</small>Home SOC Lab with Wazuh SIEM</h2>
+    <div class="card">
+      <p>A virtual security lab I built in Oracle VirtualBox to practise detection engineering and alert triage.</p>
+      <ul>
+        <li>Deployed a <b>Wazuh 4.14</b> SIEM server and enrolled Linux (Ubuntu) and Windows endpoints as monitored agents.</li>
+        <li>Generated and investigated SSH brute-force and authentication-failure events from a separate attacker VM, and hunted them with DQL queries in the Wazuh dashboard.</li>
+        <li>Triaged Windows and Linux security alerts, which Wazuh maps to MITRE ATT&amp;CK techniques.</li>
+        <li>Hosted this portfolio site on the lab's Ubuntu server with nginx.</li>
+      </ul>
+      <ul class="chips"><li>Wazuh</li><li>VirtualBox</li><li>Ubuntu</li><li>Windows 10</li><li>nginx</li><li>MITRE ATT&amp;CK</li></ul>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2><small>Credentials</small>Certifications &amp; Education</h2>
+    <div class="grid2">
+      <div class="card cert"><div class="badge">CISM</div><div><p><b>Certified Information Security Manager</b></p><p class="sub">ISACA</p></div></div>
+      <div class="card cert"><div class="badge">PCNSE</div><div><p><b>Palo Alto Networks Certified Network Security Engineer</b></p><p class="sub">Palo Alto Networks</p></div></div>
+      <div class="card cert"><div class="badge">NSE4</div><div><p><b>Fortinet NSE 4: FortiGate Security</b></p><p class="sub">Fortinet</p></div></div>
+      <div class="card cert"><div class="badge">NSE5</div><div><p><b>Fortinet NSE 5: FortiAnalyzer</b></p><p class="sub">Fortinet</p></div></div>
+      <div class="card cert"><div class="badge">M.Eng.</div><div><p><b>Master of Engineering, Internetworking</b></p><p class="sub">Halifax, Canada &middot; Jan 2010 &ndash; Oct 2011</p></div></div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2 style="color:var(--text)"><small>Contact</small>Let's talk</h2>
+    <p>Open to Security Analyst, SOC Analyst and Network Security roles in Montreal, Canada or remote.</p>
+    <div class="contact">
+      <a class="btn primary" href="mailto:ramanramachandran2015@gmail.com">ramanramachandran2015@gmail.com</a>
+    </div>
+    <p style="margin-top:28px">&copy; <span id="yr">2026</span> Raman Ramachandran</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, key="theme";
+  try{var s=localStorage.getItem(key); if(s) root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var cur=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+    var next=cur==="dark"?"light":"dark"; root.setAttribute("data-theme",next);
+    try{localStorage.setItem(key,next);}catch(e){}
+  });
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
